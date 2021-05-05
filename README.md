@@ -5,7 +5,7 @@ Matlab implementation of the C-SCSA method.
 [![Discord](https://img.shields.io/badge/paper-ArXiv-blueviolet)](https://arxiv.org/abs/1908.07758)
 
 ## Running the project code
-The original source is developed in Matlab 2016. An equaling or higher version is recommended. Download the folder to your local Matlab directory and include all folders and subfolders in the project.
+The original source is developed in Matlab 2016. An equaling or higher version is recommended. Download the project to your local Matlab directory and include all folders and subfolders in the project.
 
 ### Signal generation
 There are different types of signals you can generate, including:
