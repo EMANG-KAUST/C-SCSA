@@ -7,7 +7,7 @@ Matlab implementation of the C-SCSA method.
 ## Running the project code
 The original source is developed in Matlab 2016. An equaling or higher version is recommended. Download the folder to your local Matlab directory and include all folders and subfolders in the project.
 
-## Signal generation
+### Signal generation
 There are different types of signals you can generate, including:
 
 |     Types     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
