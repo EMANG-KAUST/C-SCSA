@@ -1,4 +1,4 @@
-# Signal denoising based on the Schrödinger operator's eigenspectrum and a curvature constraint (C-SCSA)
+# Signal denoising based on SCSA and a curvature constraint (C-SCSA)
 
 Matlab implementation of the C-SCSA method.
 
