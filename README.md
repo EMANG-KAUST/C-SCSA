@@ -24,9 +24,9 @@ There are different types of signals you can generate, including:
 If we want to create a piece-wise regular signal (around 500 samples) with uniform noise (distrubuted between (0,10), use the following command:
 
 ```shell
-y_clean = load_signal('Piece-Regular', 500);
-n = uniformNoise(length(y_clean),10)';
-y_noisy=y_clean+n;
+y_clean = load_signal('Piece-Regular', 500)
+n = uniformNoise(length(y_clean),10)'
+y_noisy=y_clean+n
 ```
 More specifically, if we are generating gaussian signals with uniform noise (level%), use the following command:
 
@@ -37,6 +37,6 @@ More specifically, if we are generating gaussian signals with uniform noise (lev
 For example, let's say we want to generate a 4-peak gaussian signal, with 50% of noise, we can simply type:
 
 ```shell
-pos=[2,3.6,7,9]; hgt= [2,4,4.5,7]; wdt=[2,3,3,4];
-[f, yf, yf0]=Gaussian_signal_generation(pos,hgt,wdt,50);
+pos=[2,3.6,7,9]; hgt= [2,4,4.5,7]; wdt=[2,3,3,4]
+[f, yf, yf0]=Gaussian_signal_generation(pos,hgt,wdt,50)
 ```
