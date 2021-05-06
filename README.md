@@ -28,4 +28,8 @@ y_clean = load_signal('Piece-Regular', 500);
 n = uniformNoise(length(y_clean),10)';
 y_noisy=y_clean+n;
 ```
+More specifically, if we are generating Gaussian signals with uniform noise (level%), we can simply type:
 
+```shell
+[f, yf, yf0]=Gaussian_signal_generation(pos,hgt,wdt,level)
+```
