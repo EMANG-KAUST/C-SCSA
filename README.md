@@ -47,4 +47,8 @@ The generated 4-peak signal will look like below:
 ![alt text](https://github.com/EMANG-KAUST/C-SCSA/blob/main/img/fig1.jpg)
 
 ### Signal denoising with C-SCSA
-To denoise signal, use the function `[ yscsa,mse,snr ,psnr] = SCSAden( yf,yf0 )`
+To perform SCSA, use the following function `smooth`
+
+```shell
+[ yscsa,mse,snr ,psnr] = SCSAden( yf,yf0,smooth )
+```
