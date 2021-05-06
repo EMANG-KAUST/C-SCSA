@@ -46,3 +46,5 @@ wdt=[2,3,3,4]
 The generated 4-peak signal would look like below:
 ![alt text](https://github.com/EMANG-KAUST/C-SCSA/blob/main/img/fig1.jpg)
 
+### Signal denoising with C-SCSA
+To denoise signal, use the function `[ yscsa,mse,snr ,psnr] = SCSAden( yf,yf0 )`
