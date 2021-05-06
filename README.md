@@ -42,3 +42,6 @@ hgt= [2,4,4.5,7]
 wdt=[2,3,3,4]
 [f, yf, yf0]=Gaussian_signal_generation(pos,hgt,wdt,50)
 ```
+
+![alt text](https://github.com/EMANG-KAUST/C-SCSA/tree/main/img)
+
