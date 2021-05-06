@@ -41,6 +41,7 @@ pos=[2,3.6,7,9]
 hgt= [2,4,4.5,7]
 wdt=[2,3,3,4]
 [f, yf, yf0]=Gaussian_signal_generation(pos,hgt,wdt,50)
+plotGenFig(yf,yf0)
 ```
 
 The generated 4-peak signal will look like below:
