@@ -37,6 +37,8 @@ More specifically, if we are generating gaussian signals with uniform noise (lev
 For example, let's say we want to generate a 4-peak gaussian signal, with 50% of noise, we can simply type:
 
 ```shell
-pos=[2,3.6,7,9]; hgt= [2,4,4.5,7]; wdt=[2,3,3,4]
+pos=[2,3.6,7,9]
+hgt= [2,4,4.5,7]
+wdt=[2,3,3,4]
 [f, yf, yf0]=Gaussian_signal_generation(pos,hgt,wdt,50)
 ```
