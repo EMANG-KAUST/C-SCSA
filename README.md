@@ -62,9 +62,11 @@ To perform SCSA utilities, use the following function with the specifications:
 
 
 ## Run a Demo (A quick start)
+There is a quick start guide in demo.m which involves signal generation and C-SCSA denoising at different noise levels (small noise, median noise, high noise). In the command window, simply run:
 ```matlab
 demo
 ```
+
 ## About the project code
 The original source is developed in Matlab 2016a. An equaling or higher version is recommended. 
 
