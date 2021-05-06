@@ -48,10 +48,10 @@ The generated 4-peak signal will look like below:
 ![alt text](https://github.com/EMANG-KAUST/C-SCSA/blob/main/img/fig1.jpg)
 
 ### Signal denoising with C-SCSA
-To perform SCSA, use the following function with the specifications:
+To perform SCSA utilities, use the following function with the specifications:
 |     Utilities    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | :-----------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|  **`Gaussian`**   | The Gaussian signal is recommended to be used in simulation, which [SCSA](https://link.springer.com/content/pdf/10.1007/s00498-012-0091-1.pdf) is good at characterizing. Signals such as [chromatography](https://en.wikipedia.org/wiki/Chromatography) spectral peaks can be modeled by Gaussian peaks generation function. The users will be able to change the amplitude(hgt), position(pos) and width(wdt) of peak `[f, yf, yf0]=Gaussian_signal_generation(pos,hgt,wdt,0)` in favor of their options. Output of the function is yf0. To adjust output signal length, change `x = linspace(0,1,#{length});`in line 2 of Gaussian_signal_generation.m         |
+|  **`C-SCSA`**   | Our main C-SCSA implementation. It is the entry point into the denoising algorithm, capable of taking any noisy signal as input (signals with 300-10000 samples are recommended for computing perspectives). **function Input**: `v` is a smoothness parameter related to eq. (11) in our [IET paper](https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/sil2.12023). `yf` is the noisy signal and `yf0` is the clean signal, with possible values between (-5,5). `v` **varies with input signal types, signal length and sampling frequencies.**        |
 |   `Regular`    | key='regular' or key='Piece-Regular'(options.alpha gives regularity). The users will be able to generate by `y = load_signal(key, signal_length, options)`.  |
 |   `Bumps`    | key='Bumps'. The users will be able to generate by `y = load_signal(key, signal_length, options)`. |
 |  `Sing`   | key='Sing'. The users will be able to generate by `y = load_signal(key, signal_length, options)`.                                                                                                                                                                                                                                                              |
@@ -60,7 +60,7 @@ To perform SCSA, use the following function with the specifications:
 
 
 
-**function Input**: `v` is a smoothness parameter related to eq. (11) in our [IET paper](https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/sil2.12023). `yf` is the noisy signal and `yf0` is the clean signal, with possible values between (-5,5). `v` **varies with input signal types, signal length and sampling frequencies.**
+
 
 **function Output**: `yscsa` is the denoised signal. `snr` and `mse` is the SNR and mean squared error (MSE) of the denoised signal for evaluation purposes.
 
