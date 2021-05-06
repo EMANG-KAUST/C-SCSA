@@ -49,7 +49,7 @@ The generated 4-peak signal will look like below:
 ### Signal denoising with C-SCSA
 To perform SCSA, use the following function with the specifications.
 
-**function Input**: `v` is a smoothness parameter related to eq. (11) in our [IET paper](https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/sil2.12023). `yf` is the noisy signal and `yf0` is the clean signal, with possible values between (-5,5).
+**function Input**: `v` is a smoothness parameter related to eq. (11) in our [IET paper](https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/sil2.12023). `yf` is the noisy signal and `yf0` is the clean signal, with possible values between (-5,5). **`v` varies with signal types, signal length and sampling frequencies. **
 
 **function Output**: `yscsa` is the denoised signal. `snr` and `mse` is the SNR and mean squared error (MSE) of the denoised signal for evaluation purposes.
 
