@@ -6,7 +6,9 @@ Matlab implementation of the C-SCSA method.
 [![Paper2](https://img.shields.io/badge/paper-ArXiv-blueviolet)](https://arxiv.org/abs/1908.07758)
 [![Discord](https://img.shields.io/badge/Code%20Coverage-70%25-yellowgreen)](https://github.com/EMANG-KAUST/C-SCSA/blob/main/README.md)
 
-## Running the project code
+## Modules 
+
+### About the project code
 The original source is developed in Matlab 2016a. An equaling or higher version is recommended. Download the project to your local Matlab directory and include all folders and subfolders in the project.
 
 ### Data generation
