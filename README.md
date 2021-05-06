@@ -57,4 +57,4 @@ To perform SCSA, use the following function with the specifications.
 [ yscsa,mse,snr ,psnr] = SCSAden( yf,yf0,v )
 ```
 
-
+### Run a Demo
