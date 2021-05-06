@@ -24,8 +24,8 @@ There are different types of signals you can generate, including:
 For example, if we want to create a bumps signal (around 500 samples) with uniform noise (distrubuted between (0,10), use the following command:
 
 ```shell
-y = load_signal('Piece-Regular', 500);
-n = uniformNoise(length(y),10)';
-signal=y+n;
+y_clean = load_signal('Piece-Regular', 500);
+n = uniformNoise(length(y_clean),10)';
+y_noisy=y_clean+n;
 ```
 
