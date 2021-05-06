@@ -66,6 +66,8 @@ There is a quick start guide in demo.m which involves signal generation and C-SC
 ```matlab
 demo
 ```
+The demo will plot the C-SCSA denoising figure:
+![fig2](https://github.com/EMANG-KAUST/C-SCSA/blob/main/img/fig2.jpg)
 
 ## About the project code
 The original source is developed in Matlab 2016a. An equaling or higher version is recommended. 
