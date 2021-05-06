@@ -58,3 +58,10 @@ To perform SCSA, use the following function with the specifications.
 ```
 
 ### Run a Demo
+
+
+### License
+
+The C-SCSA library (i.e. all code inside of the `functions` directory) is licensed under the
+[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), also
+included in our repository in the `COPYING` file.
