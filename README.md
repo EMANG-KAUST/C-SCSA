@@ -43,7 +43,7 @@ wdt=[2,3,3,4]
 [f, yf, yf0]=Gaussian_signal_generation(pos,hgt,wdt,50)
 ```
 
-The generated 4-peak signal would look like below:
+The generated 4-peak signal will look like below:
 ![alt text](https://github.com/EMANG-KAUST/C-SCSA/blob/main/img/fig1.jpg)
 
 ### Signal denoising with C-SCSA
