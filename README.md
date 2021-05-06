@@ -8,6 +8,10 @@ Matlab implementation of the C-SCSA method.
 
 ## Modules 
 
+### Pre-requisite
+Download the project to your local Matlab directory and include all folders and subfolders in the project. No other dependencies are needed.
+
+
 ### Data generation
 There are different types of signals you can generate, including:
 
@@ -67,7 +71,7 @@ plotGenFig(yf,yf0)
 }
 ```
 ## About the project code
-The original source is developed in Matlab 2016a. An equaling or higher version is recommended. Download the project to your local Matlab directory and include all folders and subfolders in the project.
+The original source is developed in Matlab 2016a. An equaling or higher version is recommended. 
 
 ### License
 
