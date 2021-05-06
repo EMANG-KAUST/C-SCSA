@@ -58,7 +58,7 @@ To perform SCSA utilities, use the following function with the specifications:
 |   `SCSA`    | SCSA reconstruction. Users can decompose the signal with a positive `h` value, by `[yscsa,Nh,EigV,EigF] = scsa_build(h,y)`. **function Input**: `h` is a positive value, also known as the [SCSA](https://link.springer.com/content/pdf/10.1007/s00498-012-0091-1.pdf) semi-classical constant. It can be selected by [Quantum-based interval selection](https://ieeexplore.ieee.org/abstract/document/9287878). `y` is the input signal to be decomposed.  **function Output**: `yscsa` is the decomposed signal, `Nh` is the number of eigenfunctions. `EigV` is a matrix with eigenvalues on its diagonal (you can export the eigenvalues by `diag(EigV)`. `EigF` is the matrix of eigenfunctions. [UI interface](https://github.com/EMANG-KAUST/SCSA-reconstruction) of this tool is also available.  |
 
 
-### Run a Demo
+### Run a Demo (a quick start)
 
 
 ### License
