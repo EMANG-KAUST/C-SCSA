@@ -20,3 +20,12 @@ There are different types of signals you can generate, including:
 |  `Sing`   | key='Sing'. The users will be able to generate by `y = load_signal(key, signal_length, options)`.                                                                                                                                                                                                                                                              |
 |     `Noise(Gaussian)`     | Gaussian noise is statistical noise having a probability density function (PDF) equal to that of the normal distribution, which is also known as the Gaussian distribution. key='gaussiannoise' (options.sigma gives width of filtering in pixels). The users will be able to generate by `y = load_signal(key, signal_length, options)`.                                                                                                                                                                                                                                                                    |
 |   `Noise(Uniform)`   | Uniform noise refers to random noise generated in the interval (0,level), user can also specify the number of noise samples by `[n] = uniformNoise(length,level)`).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+
+For example, if we want to create a bumps signal (around 500 samples) with uniform noise (distrubuted between (0,10), use the following command:
+
+```shell
+y = load_signal('Piece-Regular', 500);
+n = uniformNoise(length(y),10)';
+signal=y+n;
+```
+
