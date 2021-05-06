@@ -62,14 +62,11 @@ To perform SCSA utilities, use the following function with the specifications:
 
 ### Run a Demo (A quick start)
 ```matlab
-package main
-
-import (
-	demo "github.com/saschagrunert/demo"
-)
-
-func main() {
-	demo.New().Run()
+pos=[2,3.6,7,9]
+hgt= [2,4,4.5,7]
+wdt=[2,3,3,4]
+[f, yf, yf0]=Gaussian_signal_generation(pos,hgt,wdt,50)
+plotGenFig(yf,yf0)
 }
 ```
 
