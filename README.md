@@ -61,7 +61,17 @@ To perform SCSA utilities, use the following function with the specifications:
 
 
 ### Run a Demo (A quick start)
+```matlab
+package main
 
+import (
+	demo "github.com/saschagrunert/demo"
+)
+
+func main() {
+	demo.New().Run()
+}
+```
 
 ### License
 
