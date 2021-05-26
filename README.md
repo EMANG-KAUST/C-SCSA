@@ -72,7 +72,7 @@ The demo will plot the C-SCSA denoising figure:
 ## About the project code
 The original source is developed in Matlab 2016a. An equaling or higher version is recommended. 
 
-### License
+## License
 
 The C-SCSA library (i.e. all code inside of the `functions` directory) is licensed under the
 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), also
