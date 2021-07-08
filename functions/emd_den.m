@@ -1,4 +1,9 @@
-function  [ de,mse,snr ,psnr] = emd_den( yf,yf0 )
+function  [ de,mse,snr ,psnr] = emd_den( yf,yf0,c,k)
+if nargin<4
+    c=0.00006;
+    k=2;
+end
+    
 eig_f=emd(yf);
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
@@ -9,7 +14,7 @@ for i=1:size(eig_f,1)
 %     plot(eig_proc(eig_f(i,:),eig_f,0.00006,2,i))
 %     hold on
     
-    y=y+eig_proc(eig_f(i,:),eig_f,0.0006,4,i);
+    y=y+eig_proc(eig_f(i,:),eig_f,c,k,i);
    
 end
 
